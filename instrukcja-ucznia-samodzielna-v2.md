@@ -547,15 +547,15 @@ TYDZIEŃ 8:
 | Dokumentacja | 15 | Zrzuty, kwerendy, struktura |
 | Prezentacja | 50 | Aplikacja działa na wybranym komputerze, umiem odpowiedzieć na pytania dotyczące projektu |
 
-46-50pkt - 5
-40-45pkt - 4
-34-39pkt - 3
-26-33pkt - 2
-0-25pkt - 1 
+| 46-50pkt - 5 |
+| 40-45pkt - 4 |
+| 34-39pkt - 3 |
+| 26-33pkt - 2 |
+| 0-25pkt - 1 | 
 
-Oceny z PHP, to ocena z przemiotu >> Tworzenie stron i aplikacji internetowych
-Ocena z CSS, JS, Dokumentacja, to ocena z przedmiotu >> Aplikacje desktopowe i mobilne
-Ocena z prezentacji, to ocena z przedmiotu >> Witryny i aplikacje internetowe
+| Oceny z PHP, to ocena z przemiotu >> Tworzenie stron i aplikacji internetowych |
+| Ocena z CSS, JS, Dokumentacja, to ocena z przedmiotu >> Aplikacje desktopowe i mobilne |
+| Ocena z prezentacji, to ocena z przedmiotu >> Witryny i aplikacje internetowe |
 
 ---
 

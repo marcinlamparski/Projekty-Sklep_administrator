@@ -5,7 +5,7 @@
 
 ## ⚠️ WAŻNE!
 
-Ta instrukcja zawiera **podpowiedzi, a nie gotowy kod**. Będziesz musiał **sam napisać** każdy plik. Na egzaminie będziesz musiał to robić samodzielnie, więc zacznij teraz!
+Ta instrukcja zawiera **podpowiedzi, a nie gotowy kod**. Będziesz musiał **sam napisać** każdy plik. Na egzaminie będziesz musiał to robić samodzielnie, więc zacznij od teraz!
 
 **Czegoś nie rozumiesz?** Szukaj w Google, dokumentacji PHP, MDN lub pytaj nauczyciela – nie szukaj gotowych rozwiązań.
 
@@ -30,7 +30,7 @@ C:\xampp\htdocs\sklep\
 ├── zamowienia.php
 ├── css/styl.css
 ├── js/skrypt.js
-├── img/ (zrzuty)
+├── img/ (katalog na zrzuty wykonanych kwarend sql)
 ├── kwerendy.txt
 └── przegladarka.txt
 ```
@@ -153,6 +153,8 @@ Utwórz stronę, która:
 
 **Pole wyszukiwania:**
 - `<input type="text" id="searchInput">`
+- jakis_input.addEventListener(input, function() { };
+lub
 - `onkeyup="filterTable()"` – wywoła JavaScript przy każdej literze
 
 ### Test:

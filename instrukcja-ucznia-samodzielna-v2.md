@@ -18,7 +18,6 @@ Stworzysz aplikację internetową, która:
 - ✅ Wyświetli produkty w tabeli
 - ✅ Wyświetli zamówienia z danymi klientów (JOIN)
 - ✅ Umożliwi filtrowanie produktów na żywo
-- ✅ Będzie responsywna na telefonie
 
 ---
 
@@ -556,6 +555,9 @@ TYDZIEŃ 8:
 | Oceny z PHP, to ocena z przemiotu >> Tworzenie stron i aplikacji internetowych |
 | Ocena z CSS, JS, Dokumentacja, to ocena z przedmiotu >> Aplikacje desktopowe i mobilne |
 | Ocena z prezentacji, to ocena z przedmiotu >> Witryny i aplikacje internetowe |
+
+Całość dokumentację (strukturę plików i katalogów) wrzucacie po skompresowaniu na serwer:
+https://tiny.pl/59ym1y5r
 
 ---
 

@@ -567,9 +567,9 @@ TYDZIEŃ 8:
 
 ## 💡 ZŁOTA ZASADA
 
-**Nie kopiuj gotowego kodu! Pisz sam, nawet jeśli będzie czekić.**
+**Nie kopiuj gotowego kodu! Pisz sam.**
 
-Na egzaminie nikt ci nie da gotowego kodu. Zacznij się uczyć pisać teraz.
+**Na egzaminie nikt ci nie da gotowego kodu. Zacznij się uczyć pisać teraz. Błędy są naturalną konsekwencją kodowania**
 
 ---
 

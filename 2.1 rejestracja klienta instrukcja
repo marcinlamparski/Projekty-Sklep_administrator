@@ -68,24 +68,6 @@ Utwórz plik, który **połączy się z bazą MySQL**.
 - `mysqli_set_charset()` – ustawienie kodowania
   Przykład użycia: mysqli_set_charset($conn, "utf8");  - po ustanowieniu połączenia z bazą w pliku config.php
 
-### Wskazówka na strukturę:
-
-```
-<?php
-// Zmienne z danymi dostępu
-// Połączenie z bazą
-// Sprawdzenie błędu (if !$connect)
-// Ustawienie kodowania
-?>
-```
-
-### Gdzie szukać informacji?
-
-- Google: "php mysqli_connect"
-- PHP.net: https://www.php.net/manual/pl/function.mysqli-connect
-- Pytaj nauczyciela
-
-### Test:
 
 Po napisaniu pliku – jeśli go dołączysz do innego pliku i będziesz mieć dostęp do `$connect`, to działa.
 
@@ -97,7 +79,7 @@ Po napisaniu pliku – jeśli go dołączysz do innego pliku i będziesz mieć d
 
 Utwórz stronę, która:
 1. Wyświetli formularz <FORM>
-2. Pozwoli wysłać dane metodą POST do potwierdzenie.php
+2. Pozwoli wysłać dane metodą POST do pliku potwierdzenie.php
 
 
 ---
@@ -123,7 +105,7 @@ Stwórz nową stronę do której trafia dane z formularza która umożliwi ich w
 
 1. Sprawdzenie czy są puste formularze
 2. Sprawdzenie długości (imię 30 znaków, nazwisko 40 znaków, miast 30 znaków, telefon 12 znaków, miasto 30 znaków, email 50 znaków)
-3. Sprawdzenie czy jest liczbą (telefon)
+3. Sprawdzenie czy jest liczbą (telefon) i czy maksymalnie 9 znaków
 4. Sprawdzenie czy zawiera znaki: (email: 
 
 ## ⚙️ Dzień 5: STYLOWANIE (styl.css)

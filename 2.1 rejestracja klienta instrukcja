@@ -1,1 +1,222 @@
+# INSTRUKCJA DLA UCZNIA – Samodzielny projekt
+## Sklep Internetowy – Pisz kod samodzielnie!
 
+---
+
+## ⚠️ WAŻNE!
+
+Ta instrukcja zawiera **podpowiedzi, a nie gotowy kod**. Będziesz musiał **sam napisać** każdy plik. Na egzaminie będziesz musiał to robić samodzielnie, więc zacznij od teraz!
+
+**Czegoś nie rozumiesz?** Szukaj w Google, dokumentacji PHP, MDN lub pytaj nauczyciela – nie szukaj gotowych rozwiązań.
+
+---
+
+## 🎯 CEL PROJEKTU
+
+Stworzysz aplikację internetową, która:
+- ✅ Połączy się z bazą MySQL
+- ✅ Wyświetli formularz dodawania nowego klienta
+- ✅ Waliduje wprowadzone dane do formularza poprzez PHP
+- ✅ Doda nowego klienta do bazy - INSERT
+
+---
+
+## 📁 STRUKTURA PROJEKTU
+
+```
+C:\xampp\htdocs\sklep\
+├── config.php
+├── formularz.html
+├── potwierdzenie.php
+├── css/styl.css
+├── js/skrypt.js
+
+```
+
+---
+
+## ⚙️ Dzień 1: BAZA DANYCH
+
+### Zadanie: Import bazy danych
+
+Otrzymasz od nauczyciela plik `sklep_internetowy.sql`.
+
+**Kroki:**
+1. Uruchom XAMPP (Apache + MySQL)
+2. Otwórz phpMyAdmin
+3. Zaimportuj plik (SQL → wklej → Wykonaj)
+
+**Co sprawdzić:**
+- Czy baza `sklep_internetowy` się stworzyła?
+- Ile tabel jest w bazie? (Powinna być 4)
+- Ile produktów? (SELECT COUNT(*) FROM produkt)
+- Ile zamówień? (SELECT COUNT(*) FROM zamowienie)
+
+**Zadanie:** Uruchom w phpMyAdmin zapytania i zobacz jakie dane są w każdej tabeli. Zapamiętaj nazwy kolumn.
+
+---
+
+## ⚙️ Dzień 2: PLIK KONFIGURACYJNY (config.php)
+
+### Co musisz zrobić?
+
+Utwórz plik, który **połączy się z bazą MySQL**.
+
+### Jakie funkcje będziesz potrzebować?
+
+- `mysqli_connect()` – łączenie z bazą
+- `mysqli_set_charset()` – ustawienie kodowania
+  Przykład użycia: mysqli_set_charset($conn, "utf8");  - po ustanowieniu połączenia z bazą w pliku config.php
+
+### Wskazówka na strukturę:
+
+```
+<?php
+// Zmienne z danymi dostępu
+// Połączenie z bazą
+// Sprawdzenie błędu (if !$connect)
+// Ustawienie kodowania
+?>
+```
+
+### Gdzie szukać informacji?
+
+- Google: "php mysqli_connect"
+- PHP.net: https://www.php.net/manual/pl/function.mysqli-connect
+- Pytaj nauczyciela
+
+### Test:
+
+Po napisaniu pliku – jeśli go dołączysz do innego pliku i będziesz mieć dostęp do `$connect`, to działa.
+
+---
+
+## ⚙️ Dzień 3: STRONA FORMULARZA (formularz.html)
+
+### Co musisz zrobić?
+
+Utwórz stronę, która:
+1. Wyświetli formularz <FORM>
+2. Pozwoli wysłać dane metodą POST do potwierdzenie.php
+
+
+---
+
+## ⚙️ Dzień 4: WALIDACJA (potwierdzenie.php)
+
+### Co musisz zrobić?
+
+Stwórz nową stronę do której trafia dane z formularza która umożliwi ich walidację i wprowadzenie danych do bazy
+
+
+### Funckjonalność
+
+
+- Sprawdza poprawność wprowadzonych danych
+- Jeśli występują błędy informuje w którym miejscu (Inpucie)
+- Jeśli występiły błędy pozwala powrócić do formularza
+- Jeśli nie ma błędów wprowadza dane do bazy (nowego klienta)
+
+
+
+## ⚙️ Dzień 5: STYLOWANIE (styl.css)
+
+### Co musisz zrobić?
+
+Ostyluj stronę tak, by:
+- Wyglądała estetycznie - Estetyka podnosi ocenę
+- Zachowujemy spójność z poprzednim projktem, tworzymy jedną aplikację
+
+
+
+### Kluczowe CSS:
+
+- `background-color` – kolor tła
+- `padding` – odstęp wewnętrzny
+- `border` – obramowanie
+- `:hover` – efekt przy najechaniu
+- `:nth-child(even)` – parzyste wiersze
+
+### Wskazówki:
+
+**Nagłówek:**
+- Powinien być niebieski (#2563eb lub inny) 
+- Tekst biały
+- Duży padding
+
+
+
+---
+
+## ❓ NAJCZĘSTSZE PROBLEMY
+
+### Problem: "Błąd połączenia z bazą"
+
+**Co sprawdzić:**
+- Czy MySQL jest uruchomiony?
+- Czy dane w config.php są poprawne?
+- Czy baza o tej nazwie istnieje?
+
+**Jak debugować:**
+- F12 → Console → szukaj błędu
+- `mysqli_error($connect)` – wypisz błąd
+
+### Problem: "Polskie znaki się źle wyświetlają"
+
+**Przyczyna:**
+- Kodowanie UTF-8 nie jest ustawione
+
+**Rozwiązanie:**
+- W config.php: `mysqli_set_charset()`
+- Plik PHP: Zapisz jako UTF-8
+
+
+
+---
+
+## 📚 GDZIE SZUKAĆ POMOCY
+
+### Dokumentacja:
+- **PHP:** https://www.php.net/manual/pl/
+- **JavaScript:** https://developer.mozilla.org/pl/
+- **CSS:** https://www.w3schools.com/css/
+
+### Wyszukiwanie:
+- Google: "php mysqli_query example"
+- Google: "javascript filter array"
+- Google: "css responsive table"
+
+### Nauczyciel:
+- Pytaj kiedy nie rozumiesz koncepcji
+- Pytaj o błędy w konsoli
+- Pytaj o składnię
+
+### YouTube:
+- Szukaj: "PHP MySQL tutorial"
+- Szukaj: "JavaScript DOM manipulation"
+- Szukaj: "CSS responsive design"
+
+
+---
+
+## 🎯 OCENIANIE
+
+| Oceny z PHP logika aplikacji, to ocena z przemiotu >> Witryny i aplikacje internetowe |
+| Ocena z CSS, HTML dodatkowe punkty za JS (wizualizacje), to ocena z przedmiotu >> Aplikacje desktopowe i mobilne |
+| Ocena z prezentacji, to ocena z przedmiotu >> Tworzenie stron i aplikacji |
+
+- Całość dokumentację (strukturę plików i katalogów) wrzucacie po skompresowaniu na serwer:
+- klasa V TIe --- https://tiny.pl/59ym1y5r
+- klasa IV TIe --- https://tiny.pl/m954pryb
+
+---
+
+## 💡 ZŁOTA ZASADA
+
+**Nie kopiuj gotowego kodu! Pisz sam.**
+
+**Na egzaminie nikt ci nie da gotowego kodu. Zacznij się uczyć pisać teraz. Błędy są naturalną konsekwencją kodowania**
+
+---
+
+**Powodzenia! Pamiętaj – każdy błąd to nauka. Używaj F12, czytaj dokumentację, pytaj nauczyciela!** 🚀
